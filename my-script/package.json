@@ -1,0 +1,35 @@
+{
+  "name": "my-script",
+  "version": "1.0.0",
+  "description": "cli learning",
+  "main": "index.js",
+  "license": "MIT",
+  "files": [
+    "bin"
+  ],
+  "bin": {
+    "my-script": "./bin/index.js"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "build": "pnpm tsc",
+    "lint": "eslint '**/*.{js,ts}' --fix",
+    "prettier": "prettier --write ."
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
+    "@types/node": "^20.2.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "2.8.8",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "chalk": "4.1.2",
+    "commander": "^10.0.1",
+    "cross-spawn": "^7.0.3"
+  }
+}
